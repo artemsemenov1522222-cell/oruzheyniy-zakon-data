@@ -1,0 +1,45 @@
+name: Обновление официальных НПА
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legal-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Получить репозиторий
+        uses: actions/checkout@v4
+
+      - name: Подключить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Проверить официальный портал
+        run: python scripts/fetch_pravo.py
+
+      - name: Сохранить изменения
+        shell: bash
+        run: |
+          git config user.name "oruzheyniy-zakon-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+
+          if git diff --cached --quiet; then
+            echo "Новых изменений нет"
+            exit 0
+          fi
+
+          git commit -m "Обновление официальных данных НПА"
+          git push
