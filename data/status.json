@@ -1,9 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": null,
-  "overall_status": "not_run",
-  "total": 0,
+  "generated_at": "2026-07-17T23:47:56+00:00",
+  "source": "Официальный интернет-портал правовой информации",
+  "source_help_url": "https://publication.pravo.gov.ru/help",
+  "total": 1,
   "successful": 0,
-  "failed": 0,
-  "documents": []
+  "failed": 1,
+  "overall_status": "error",
+  "documents": [
+    {
+      "eo_number": "0001202607040025",
+      "label": "Федеральный закон от 04.07.2026 № 236-ФЗ",
+      "status": "error",
+      "checked_at": "2026-07-17T23:47:56+00:00",
+      "error": "RuntimeError: Источник недоступен после 3 попыток: <urlopen error timed out>"
+    }
+  ]
 }
