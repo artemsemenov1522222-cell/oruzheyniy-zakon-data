@@ -1,0 +1,12 @@
+Файлы для репозитория oruzheyniy-zakon-data
+
+1. Распакуйте архив.
+2. На странице репозитория нажмите Add file → Upload files.
+3. Перетащите в окно содержимое распакованной папки, сохранив каталоги:
+   .github/workflows/update-legal-data.yml
+   scripts/fetch_pravo.py
+   data/watchlist.json
+   data/status.json
+   data/documents/.gitkeep
+4. Нажмите Commit changes.
+5. Откройте Actions → «Обновление официальных НПА» → Run workflow.
