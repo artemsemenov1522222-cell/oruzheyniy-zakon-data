@@ -2,7 +2,6 @@ name: Обновление официальных НПА
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "17 */6 * * *"
 
@@ -30,8 +29,8 @@ jobs:
       - name: Проверить источники законодательства
         run: python scripts/fetch_pravo_fixed.py
 
-      - name: Обновить статьи закона № 150-ФЗ
-        run: python scripts/fetch_law_150.py
+      - name: Обновить и очистить статьи закона № 150-ФЗ
+        run: python scripts/fetch_law_150_clean.py
 
       - name: Сохранить изменения
         shell: bash
