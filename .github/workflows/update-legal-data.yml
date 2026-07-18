@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Проверить официальный портал
-        run: python scripts/fetch_pravo.py
+        run: python scripts/fetch_pravo_fixed.py
 
       - name: Сохранить изменения
         shell: bash
