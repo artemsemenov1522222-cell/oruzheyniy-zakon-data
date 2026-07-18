@@ -2,6 +2,7 @@ name: Обновление официальных НПА
 
 on:
   workflow_dispatch:
+
   schedule:
     - cron: "17 */6 * * *"
 
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: Получить репозиторий
@@ -26,14 +27,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Проверить официальный портал
+      - name: Проверить источники законодательства
         run: python scripts/fetch_pravo_fixed.py
+
+      - name: Обновить статьи закона № 150-ФЗ
+        run: python scripts/fetch_law_150.py
 
       - name: Сохранить изменения
         shell: bash
         run: |
           git config user.name "oruzheyniy-zakon-bot"
           git config user.email "actions@users.noreply.github.com"
+
           git add data/
 
           if git diff --cached --quiet; then
