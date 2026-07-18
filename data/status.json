@@ -1,19 +1,60 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-07-17T23:47:56+00:00",
-  "source": "Официальный интернет-портал правовой информации",
-  "source_help_url": "https://publication.pravo.gov.ru/help",
-  "total": 1,
-  "successful": 0,
-  "failed": 1,
-  "overall_status": "error",
-  "documents": [
+  "schema_version": 2,
+  "generated_at": "2026-07-18T00:03:12+00:00",
+  "overall_status": "partial",
+  "total": 4,
+  "successful": 2,
+  "failed": 2,
+  "policy": {
+    "automatic_publication": false,
+    "admin_review_required": true,
+    "official_portal_is_preferred": true,
+    "fallback_sources_are_labeled": true
+  },
+  "sources": [
     {
-      "eo_number": "0001202607040025",
-      "label": "Федеральный закон от 04.07.2026 № 236-ФЗ",
+      "source_id": "pravo_236_api",
+      "name": "Официальный портал правовой информации — 236-ФЗ",
+      "url": "https://publication.pravo.gov.ru/api/Document?eoNumber=0001202607040025",
+      "source_type": "official_api",
+      "trust_level": "primary",
       "status": "error",
-      "checked_at": "2026-07-17T23:47:56+00:00",
-      "error": "RuntimeError: Источник недоступен после 3 попыток: <urlopen error timed out>"
+      "checked_at": "2026-07-18T00:01:03+00:00",
+      "previous_snapshot_available": false,
+      "error": "RuntimeError: Источник недоступен после 2 попыток: <urlopen error timed out>"
+    },
+    {
+      "source_id": "rg_236_fz",
+      "name": "Российская газета — Федеральный закон № 236-ФЗ",
+      "url": "https://rg.ru/documents/2026/07/08/fz-236-doc.html",
+      "source_type": "official_publication_copy",
+      "trust_level": "primary_publication",
+      "status": "error",
+      "checked_at": "2026-07-18T00:01:03+00:00",
+      "previous_snapshot_available": false,
+      "error": "RuntimeError: Не удалось выделить полный текст документа на странице"
+    },
+    {
+      "source_id": "consultant_150_fz",
+      "name": "КонсультантПлюс — Федеральный закон № 150-ФЗ",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_12679/",
+      "source_type": "public_legal_system",
+      "trust_level": "verification",
+      "status": "ok",
+      "checked_at": "2026-07-18T00:01:03+00:00",
+      "sha256": "40d25528d26dd7a469ac428d86119e7ec9247e0d7a546ec06ee9bbd607918776",
+      "snapshot_file": "data/snapshots/consultant_150_fz.json"
+    },
+    {
+      "source_id": "rosguard_weapon_literacy",
+      "name": "Росгвардия — Оружейная грамотность",
+      "url": "https://rosguard.gov.ru/ru/page/index/oruzhejnaya-gramotnost",
+      "source_type": "official_agency",
+      "trust_level": "primary_guidance",
+      "status": "ok",
+      "checked_at": "2026-07-18T00:01:03+00:00",
+      "sha256": "532eb299b726ca887e76533c5b18805af85bc1150ecfb1a099ca6ca1c56adf44",
+      "snapshot_file": "data/snapshots/rosguard_weapon_literacy.json"
     }
   ]
 }
