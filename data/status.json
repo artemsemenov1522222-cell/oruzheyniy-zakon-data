@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-01T21:19:07+00:00",
+  "generated_at": "2026-08-02T09:01:52+00:00",
   "overall_status": "partial",
   "total": 4,
-  "successful": 3,
-  "failed": 1,
+  "successful": 2,
+  "failed": 2,
   "policy": {
     "automatic_publication": false,
     "admin_review_required": true,
@@ -19,7 +19,7 @@
       "source_type": "official_api",
       "trust_level": "primary",
       "status": "error",
-      "checked_at": "2026-08-01T21:16:58+00:00",
+      "checked_at": "2026-08-02T08:58:44+00:00",
       "previous_snapshot_available": false,
       "error": "RuntimeError: Источник недоступен после 2 попыток: <urlopen error timed out>"
     },
@@ -30,7 +30,7 @@
       "source_type": "official_publication_copy",
       "trust_level": "primary_publication",
       "status": "ok",
-      "checked_at": "2026-08-01T21:16:58+00:00",
+      "checked_at": "2026-08-02T08:58:44+00:00",
       "sha256": "863cd588de2948d83db41340815692986bf4881352a656c1ec1242876187e904",
       "snapshot_file": "data/snapshots/rg_236_fz.json"
     },
@@ -41,7 +41,7 @@
       "source_type": "public_legal_system",
       "trust_level": "verification",
       "status": "ok",
-      "checked_at": "2026-08-01T21:16:58+00:00",
+      "checked_at": "2026-08-02T08:58:44+00:00",
       "sha256": "40d25528d26dd7a469ac428d86119e7ec9247e0d7a546ec06ee9bbd607918776",
       "snapshot_file": "data/snapshots/consultant_150_fz.json"
     },
@@ -51,10 +51,10 @@
       "url": "https://rosguard.gov.ru/ru/page/index/oruzhejnaya-gramotnost",
       "source_type": "official_agency",
       "trust_level": "primary_guidance",
-      "status": "ok",
-      "checked_at": "2026-08-01T21:16:58+00:00",
-      "sha256": "c67f99fe79d697212c16524a04181d8bee3c2ef99b4ad8194c84d45592085971",
-      "snapshot_file": "data/snapshots/rosguard_weapon_literacy.json"
+      "status": "error",
+      "checked_at": "2026-08-02T08:58:44+00:00",
+      "previous_snapshot_available": true,
+      "error": "RuntimeError: Источник недоступен после 2 попыток: <urlopen error timed out>"
     }
   ]
 }
