@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-19T07:06:44+00:00",
+  "generated_at": "2026-08-19T13:10:39+00:00",
   "overall_status": "partial",
   "total": 4,
   "successful": 2,
@@ -19,7 +19,7 @@
       "source_type": "official_api",
       "trust_level": "primary",
       "status": "error",
-      "checked_at": "2026-08-19T07:04:34+00:00",
+      "checked_at": "2026-08-19T13:07:57+00:00",
       "previous_snapshot_available": false,
       "error": "RuntimeError: Источник недоступен после 2 попыток: <urlopen error timed out>"
     },
@@ -30,7 +30,7 @@
       "source_type": "official_publication_copy",
       "trust_level": "primary_publication",
       "status": "error",
-      "checked_at": "2026-08-19T07:04:34+00:00",
+      "checked_at": "2026-08-19T13:07:57+00:00",
       "previous_snapshot_available": true,
       "error": "RuntimeError: Источник недоступен после 2 попыток: HTTP Error 401: Unauthorized"
     },
@@ -41,7 +41,7 @@
       "source_type": "public_legal_system",
       "trust_level": "verification",
       "status": "ok",
-      "checked_at": "2026-08-19T07:04:34+00:00",
+      "checked_at": "2026-08-19T13:07:57+00:00",
       "sha256": "40d25528d26dd7a469ac428d86119e7ec9247e0d7a546ec06ee9bbd607918776",
       "snapshot_file": "data/snapshots/consultant_150_fz.json"
     },
@@ -52,8 +52,8 @@
       "source_type": "official_agency",
       "trust_level": "primary_guidance",
       "status": "ok",
-      "checked_at": "2026-08-19T07:04:34+00:00",
-      "sha256": "d709d9e66e4f5173c538dfc0bda56d7dbc38f2d8e40fe094babe485529388329",
+      "checked_at": "2026-08-19T13:07:57+00:00",
+      "sha256": "e7301c1012075dd5bb455bf16ac4c26b54502170bcfecfacda714e2716917a3a",
       "snapshot_file": "data/snapshots/rosguard_weapon_literacy.json"
     }
   ]
