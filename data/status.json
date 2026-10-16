@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-16T16:40:56+00:00",
+  "generated_at": "2026-10-16T21:09:26+00:00",
   "overall_status": "partial",
   "total": 4,
   "successful": 3,
@@ -19,7 +19,7 @@
       "source_type": "official_api",
       "trust_level": "primary",
       "status": "error",
-      "checked_at": "2026-10-16T16:38:49+00:00",
+      "checked_at": "2026-10-16T21:07:20+00:00",
       "previous_snapshot_available": false,
       "error": "RuntimeError: Источник недоступен после 2 попыток: <urlopen error timed out>"
     },
@@ -30,7 +30,7 @@
       "source_type": "official_publication_copy",
       "trust_level": "primary_publication",
       "status": "ok",
-      "checked_at": "2026-10-16T16:38:49+00:00",
+      "checked_at": "2026-10-16T21:07:20+00:00",
       "sha256": "863cd588de2948d83db41340815692986bf4881352a656c1ec1242876187e904",
       "snapshot_file": "data/snapshots/rg_236_fz.json"
     },
@@ -41,7 +41,7 @@
       "source_type": "public_legal_system",
       "trust_level": "verification",
       "status": "ok",
-      "checked_at": "2026-10-16T16:38:49+00:00",
+      "checked_at": "2026-10-16T21:07:20+00:00",
       "sha256": "ac9cbc7997009f6720795f4c3f4326cb2921264116dc92039f01e21660db20ee",
       "snapshot_file": "data/snapshots/consultant_150_fz.json"
     },
@@ -52,7 +52,7 @@
       "source_type": "official_agency",
       "trust_level": "primary_guidance",
       "status": "ok",
-      "checked_at": "2026-10-16T16:38:49+00:00",
+      "checked_at": "2026-10-16T21:07:20+00:00",
       "sha256": "8dfa175ccd6dfb6da013d8ee776ca36df4a5e3cf6cbab7c352898a2960f7c423",
       "snapshot_file": "data/snapshots/rosguard_weapon_literacy.json"
     }
