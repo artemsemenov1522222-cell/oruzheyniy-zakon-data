@@ -6,7 +6,7 @@
   "law_number": "150-ФЗ",
   "law_date": "13.12.1996",
   "revision_date": null,
-  "generated_at": "2026-10-17T10:46:10+00:00",
+  "generated_at": "2026-10-17T15:36:48+00:00",
   "source_type": "public_legal_system",
   "source_name": "КонсультантПлюс",
   "source_url": "https://www.consultant.ru/document/cons_doc_LAW_12679/",
@@ -16,7 +16,7 @@
   "article_count_discovered": 41,
   "article_count_saved": 41,
   "error_count": 0,
-  "combined_sha256": "6d36edb8e366d9acd0233914caae3f2809eeb57bc8a29c4cdfd9268262eadfb5",
+  "combined_sha256": "18eeb451fb91af77d50362b032e488508fa120c8a171236638c0b81165770265",
   "articles": [
     {
       "number": "1",
@@ -213,8 +213,8 @@
       "revision_date": "04.07.2026",
       "source_url": "https://www.consultant.ru/document/cons_doc_LAW_12679/bf02c10cdff4f0e8585bde194e0f1e786b56f897/",
       "file": "data/law_150/articles/article_13.json",
-      "clean_sha256": "24f923e6347efefec6f3226d18edb6b8d3fc8c9fc3209db94801f4c65714e436",
-      "content_length": 34510
+      "clean_sha256": "5a2ba7bdeced1e7ea564c0417375520aa4f425cb661e1dc0282e043f73fbbe0d",
+      "content_length": 34513
     },
     {
       "number": "13.1",
