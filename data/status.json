@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T17:05:08+00:00",
+  "generated_at": "2026-10-20T21:39:50+00:00",
   "overall_status": "partial",
   "total": 4,
-  "successful": 3,
-  "failed": 1,
+  "successful": 2,
+  "failed": 2,
   "policy": {
     "automatic_publication": false,
     "admin_review_required": true,
@@ -19,7 +19,7 @@
       "source_type": "official_api",
       "trust_level": "primary",
       "status": "error",
-      "checked_at": "2026-10-20T17:02:41+00:00",
+      "checked_at": "2026-10-20T21:36:40+00:00",
       "previous_snapshot_available": false,
       "error": "RuntimeError: Источник недоступен после 2 попыток: <urlopen error timed out>"
     },
@@ -30,7 +30,7 @@
       "source_type": "official_publication_copy",
       "trust_level": "primary_publication",
       "status": "ok",
-      "checked_at": "2026-10-20T17:02:41+00:00",
+      "checked_at": "2026-10-20T21:36:40+00:00",
       "sha256": "863cd588de2948d83db41340815692986bf4881352a656c1ec1242876187e904",
       "snapshot_file": "data/snapshots/rg_236_fz.json"
     },
@@ -40,10 +40,10 @@
       "url": "https://www.consultant.ru/document/cons_doc_LAW_12679/",
       "source_type": "public_legal_system",
       "trust_level": "verification",
-      "status": "ok",
-      "checked_at": "2026-10-20T17:02:41+00:00",
-      "sha256": "ac9cbc7997009f6720795f4c3f4326cb2921264116dc92039f01e21660db20ee",
-      "snapshot_file": "data/snapshots/consultant_150_fz.json"
+      "status": "error",
+      "checked_at": "2026-10-20T21:36:40+00:00",
+      "previous_snapshot_available": true,
+      "error": "RuntimeError: Источник недоступен после 2 попыток: The read operation timed out"
     },
     {
       "source_id": "rosguard_weapon_literacy",
@@ -52,7 +52,7 @@
       "source_type": "official_agency",
       "trust_level": "primary_guidance",
       "status": "ok",
-      "checked_at": "2026-10-20T17:02:41+00:00",
+      "checked_at": "2026-10-20T21:36:40+00:00",
       "sha256": "eb07f402d689ccbd2e373dc53ff455c4b66acbb899f5096b751babd4b8f3c649",
       "snapshot_file": "data/snapshots/rosguard_weapon_literacy.json"
     }
