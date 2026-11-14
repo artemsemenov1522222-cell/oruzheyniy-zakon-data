@@ -7,10 +7,10 @@
   "intended_use": "Перечень профильных НПА и официальные разъяснения Росгвардии",
   "url": "https://rosguard.gov.ru/ru/page/index/oruzhejnaya-gramotnost",
   "http_status": 200,
-  "fetched_at": "2026-11-14T06:23:17+00:00",
+  "fetched_at": "2026-11-14T18:02:09+00:00",
   "page_title": "Оружейная грамотность – Росгвардия",
-  "sha256": "51fcf0b7a504ee377239b88c993677b0229d0d3a305d00d269f2e266996dad61",
-  "content_length": 178059,
+  "sha256": "14abebf57cd2b2ac8b484aa32754e0975cec1a7c239e094658bc59d7cafcff11",
+  "content_length": 178038,
   "metadata": {
     "revision_dates_found": [],
     "latest_revision_date": null,
